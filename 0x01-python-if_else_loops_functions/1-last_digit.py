@@ -6,6 +6,8 @@ if number < 0:
     temp_num = -1 * number
     num = temp_num % 10
     num *= -1
+else:
+    num = number % 10
 
 if num < 6 and num != 0:
     print(f"Last digit of {number} is {num} and is less than 6 and not 0")
