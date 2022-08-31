@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-i#!/usr/bin/python3
 def update_dictionary(a_dictionary, key, value):
     if a_dictionary is not None:
         dic2 = {key: value}
