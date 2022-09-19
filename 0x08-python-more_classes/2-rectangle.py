@@ -1,39 +1,39 @@
 #!/usr/bin/python3
 """
-Module 1-rectange
-Contains class Rectangle
-with private attribute width and height
+Module 2-rectangle
+Contains class Rectangle with private attribute width and height,
+and public area and perimeter methods
 """
 
 
 class Rectangle:
     """
-    Defines class Rectangle with private attributes width and height
-
+    Defines class rectangle with private attribute width and height
     Args:
         width (int): width
         height (int): height
-
     Functions:
         __init__(self, width, height)
         width(self)
         width(self, value)
         height(self)
         height(self, value)
+        area(self)
+        perimeter(self)
     """
     def __init__(self, width=0, height=0):
-        """ Initializes rectangles """
+        """ Initialize rectangles """
         self.width = width
         self.height = height
 
     @property
     def width(self):
-        """ Getter: returns width """
+        """ Getter returns width """
         return self.__width
 
     @width.setter
     def width(self, value):
-        """ Setter: Sets width to new value """
+        """ Setter sets width if int > 0 """
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value < 0:
@@ -42,24 +42,24 @@ class Rectangle:
 
     @property
     def height(self):
-        """ Getter: returns height"""
+        """ Getter returns height """
         return self.__height
 
     @height.setter
     def height(self, value):
-        """ Setter: Sets height to new value"""
+        """ Setter sets height if int > 0 """
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if value < 0:
             raise ValueError("height must be >= 0")
+        self.__height = value
 
     def area(self):
-        """ Return area of rectangle """
-        return self.width * self.height
+        """ Return width * height """
+        return self.__width * self.__height
 
     def perimeter(self):
-        """ Return perimeter of rectangle if height or width != 0 """
+        """ Return 2*width + 2*height (or return 0 if width or height is 0)"""
         if self.__width == 0 or self.__height == 0:
             return 0
-        else:
-            return 2 * (self.__width + self.__height)
+        return (2 * self.__width) + (2 * self.height)
