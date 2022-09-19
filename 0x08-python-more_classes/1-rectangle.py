@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """
-Module 0-rectange
+Module 1-rectange
 Contains class Rectangle
-Empty Class
+with private attribute width and height
 """
 
 
