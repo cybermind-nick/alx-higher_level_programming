@@ -22,6 +22,7 @@ class Rectangle:
         height(self, value)
     """
     def __init__(self, width=0, height=0):
+        """ Initializes rectangles """
         self.__width = width
         self.__height = height
 
