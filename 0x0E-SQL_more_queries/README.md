@@ -16,8 +16,3 @@
 * Version: MySQL 5.7.8
 * Suggested Style Guide: [SQLStyle](http://www.tomjewett.com/dbdesign/dbdesign.php?page=setops.php)
 * Usage: ```cat [filename] | mysql -hlocalhost -uroot -p [database]```
-
----
-### Authors
-Melissa Ng [![M](https://upload.wikimedia.org/wikipedia/fr/thumb/c/c8/Twitter_Bird.svg/30px-Twitter_Bird.svg.png)](https://twitter.com/MelissaNg__)
-
